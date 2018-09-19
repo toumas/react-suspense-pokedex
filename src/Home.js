@@ -3,6 +3,8 @@ import { createCache, createResource } from "simple-cache-provider";
 import { cache } from "./cache";
 import { Link } from "@reach/router";
 
+import Pokemons from "./Pokemons";
+
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // Lazy load!
@@ -22,7 +24,7 @@ function Home() {
       <h1>Suspense</h1>
       <Link to="foo">Foo</Link>
       <React.Placeholder delayMs={500} fallback={<div>🌀 'Loading....'</div>}>
-        <Thing />
+        <Pokemons />
       </React.Placeholder>
     </React.Fragment>
   );
