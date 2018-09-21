@@ -1,7 +1,6 @@
 import React from "react";
-import { createCache, createResource } from "simple-cache-provider";
+import { createResource } from "simple-cache-provider";
 import { cache } from "./cache";
-import { Link } from "@reach/router";
 
 import Pokemons from "./Pokemons";
 
@@ -22,7 +21,6 @@ function Home() {
   return (
     <React.Fragment>
       <h1>Suspense</h1>
-      <Link to="foo">Foo</Link>
       <React.Placeholder delayMs={500} fallback={<div>🌀 'Loading....'</div>}>
         <Pokemons />
       </React.Placeholder>

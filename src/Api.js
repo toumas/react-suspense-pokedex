@@ -1,6 +1,5 @@
 import { resolve } from "path";
-
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+import { sleep } from "./utils";
 
 const pokemons = {
   count: 949,
