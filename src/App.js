@@ -3,12 +3,12 @@ import { hot } from "react-hot-loader";
 import { Router } from "@reach/router";
 
 import Home from "./Home";
-import DetailsLoader from "./DetailsLoader";
+import Details from "./Details";
 
 const App = () => (
   <Router>
     <Home path="/" />
-    <DetailsLoader path=":name" />
+    <Details path=":name" />
   </Router>
 );
 
