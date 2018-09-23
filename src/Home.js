@@ -12,7 +12,7 @@ class Home extends React.Component {
 
     return (
       <React.Fragment>
-        <h1>Suspense</h1>
+        <h1>React Suspense Pokédex</h1>
         <React.Placeholder delayMs={500} fallback={<div>🌀 'Loading....'</div>}>
           <Pokemons loadingId={loadingId} onClick={this.handleOnClick} />
         </React.Placeholder>
